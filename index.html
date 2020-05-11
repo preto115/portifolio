@@ -8,70 +8,192 @@
        
      
                      * {  
-                        margin:0;
-                        padding:0;
-                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        list-style:0;
                         text-decoration:none;
                 }
+
              
             
                     body {
-                     background-color: rgba(209, 203, 219, 0.959);
+                    background-color: rgba(175, 180, 175, 0.959);
+                    margin: auto;
+                    max-width: 980px;
                     font-family: 'Montserrat', sans-serif;
-                    font-size:18px;
-                    color: rgb(87, 84, 84)
+                    font-size:14px;
+                    text-align: justify;
+                    color: rgb(7, 2, 2);
+                    z-index: 0;
 
                 }
+                  
+                        
                     #pagina {
-                    background-color: rgba(1, 27, 5, 0.959);
-                    margin:auto;
-                    max-width: 1200px;                
-                    height: 0;
+                    background:#e3e4d0;
+                    max-width: 980px;
+                    position: initial;  
+                    padding: 10px 40px; 
+                    z-index: 1;
+                    border: 2px groove rgb(250, 150, 10);
                 } 
 
-                     .ligacao{
+                   
+                   
+                #topo{
+                      position: fixed;  
+                        width: 978px;
+                        z-index: 2;
+                        border:2px solid orange;
+                        border-bottom: 4px ridge rgb(227, 228, 208);
+                        
+                    }
+                    #topo p{
+                        background: linear-gradient(to right, whitesmoke, transparent 60%),url("/Casamento.jpg");
+                        background-color: whitesmoke;
+                        height: 82px;
+                        color: blue;
+                        background-position: 120% 40%;
+                        background-size: 50%;
+                        background-repeat: no-repeat;
+                        padding-top: 100px;
+                        padding-left: 40px;
 
-                                color:white;
-                }
-
-
-                .nav { 
-                    
-                    background-color: black;
-                    width: 100%;
-                    height: 100px;
+                    }
+                #nav { 
+                    position: fixed;
+                    top: 20.5%;
+                    margin-left:0px;
+                    width: 600px;
+                    background: linear-gradient(to right, black 50%, transparent 80%);
+                    z-index: 5;
                     
 
                     }
-                .nav, .lista {
+                #nav, .lista, .lista li {
                        
-                        display:flex;
-                        justify-content: space-evenly ; 
-                        
-
-
+                        display:inline;
+                        padding: 10px 10pt;
+                        margin-left: 0;
 
                      }
 
-                        .nav .lista .ligacao {
-                        display:block;
-                        padding:30px 30px;
-                        transition: all 0.3s ease;
+                        #nav li a {
+                            margin: auto;
+                            text-align: left;
+                            text-decoration:none !important;
+                            transition: all 0.3s ;
+                            color:white;
 
                         }
-                        .nav  .lista .ligacao:hover {
-                        background:rgb(236, 156, 8);
-                        color: black;
-                        padding: 30px 30px;
+                       
+                        #nav ul li a:hover {
+                                color: rgb(250, 192, 2);
+                                text-shadow: 0 0 15px rgb(250, 150, 10), 0 0 15px rgb(250, 150, 10);                               
+                                
+                        }
+
+                .container{
+                    padding-top: 250px ;
+
+
+                }
+                         h1{
+                             color: rgb(241, 121, 9);
+                             font-family: cur;
+                             position: absolute;
+                             padding-top: 30px;
+                            padding-left: 100px;
+
+                                    }
+                        h3{
+                            padding-bottom: 1.5em;
+                        }
+                        h4{
+                            margin-top: 20px;
+                            line-height-step:inherit;
+                        }
+                    
+                        #sobre-mim ul{
+                            display:inline-block;
+                            padding: 20px 20px;
+                            border-left-color: rgb(8, 15, 1);margin-left: 10px;
+                            line-height: 2em;
+  
+                        }
+                        p{
+                            break-before: auto;
+                            padding-top: 2em;
                         }
                      
-            .picture {
-               display:flex;
-               
+            #sobre-mim .picture {
+                float:left;
+                top: 0;
+                width: 35%;
+                margin: 20px 30px 20px 0px;  
+                border: 4px groove orange;
+                
+            }
+            #escolaridade{
+                background: linear-gradient(to right, rgb(227, 228, 208), transparent 50%), url("https://d1cb96qxozavf7.cloudfront.net/news/shutterstock_3621618861.jpg");
+                background-repeat: no-repeat;
+                padding-right: 50%;
+                background-position: 50px 120%;
+                background-size:130%;
 
+                          }
+          
+            #escolaridade ul{
+
+              
+                padding: 0 50px;
+                        line-height: 2em;
+                        font-size: 0.9em;
+                        margin-left: 10px;
+                        line-height: 2em;
 
 
             }
+
+                    
+                       #profissao{
+                        background: linear-gradient(to right, transparent 50%, rgb(227, 228, 208)), url("https://www.folhape.com.br/obj/10/291217,930,80,0,0,930,522,0,0,0,0.jpg");
+                        background-repeat: no-repeat;
+                        padding-left: 50%;
+                        background-size: 100%;
+                        background-position: -250px 75%;
+                        padding-bottom: 10% ;
+
+                    }
+                    #profissao ul{
+
+                        padding: 0 50px;
+                        padding-top: 30px;
+                        line-height: 2em;
+                        font-size: 0.9em;
+
+                        }
+                        #projetos {
+
+                        background: linear-gradient(to right, rgb(227, 228, 208), transparent 50%), url("https://d3q93wnyp4lkf8.cloudfront.net/revista/post_images/23427/e083822f2ba115b6dd4e9cd04087f794fb0a4906.jpg?1569012737");
+                        background-repeat: no-repeat;
+                        padding-right: 60%;
+                        background-size: 60%;
+                        background-position: 100% 150%;
+                        margin-bottom: 20%;
+
+                        }
+                        #projetos ol{
+
+                        padding: 0 50px;
+                        padding-top: 30px;
+                        line-height: 2em;
+                        font-size: 0.9em;
+
+                        }
+
+
+
         
 
 
@@ -80,75 +202,140 @@
 
 
     </head>
-    <div class="nav">
-        <ul class="lista">
-            <li class="lista"><a  class=" ligacao" href="#sobre-mim">Quem sou eu</a></li>
-            <li class="lista"><a  class=" ligacao" href="#profissao">Histórico profissional</a></li>
-            <li class="lista"><a  class=" ligacao" href="#escolaridade">Formação acadêmica</a></li>
-            <li class="lista"><a  class=" ligacao" href="#projetos">Meus Projetos</a></li>
-        </ul>
-    </div>
+    
         <body>
-           <div id="pagina">
-               <br><br>
+            <header id="topo" aria-label="foto de eu eu minha esposa no colo no dia do nosso casamento">
+                
+                <h1>Elisângelo Alves Ferreira</h1>
 
-        <h2>Elisângelo Alves Ferreira</h2>
-        <br>
-            <h3 id="escolaridade">Formação acadêmica</h3>
-               <div> <p>Atualmente <strong>estudo Desenvolvimento de Software</strong> pela <a  target="_blank" href="https://www.betrybe.com/"><strong>Trybe</strong></a> com previsão de conclusão do curso em abril/2021.</p>
-                <img class="picture" src="https://d1cb96qxozavf7.cloudfront.net/news/shutterstock_3621618861.jpg" alt="homem subindo numa escada desenhada" width="500px">
-                    <table>
-                        <ul>
-                        <li>Formado em Desenho Técnico para Construção Civil pela Una / Pronatec - 2015</li>
-                        <li><em>Sistemas de Informação </em>pela Anhanguera (incompleto) - 2013</li>
-                        <li>Formado em Técnico em Computação pela Cedaspy - 2006</li>
-                    </ul>
-                </table>
+                <p><em>"Ninguém pode voltar atrás e fazer um novo começo, <br>
+                    mas qualquer um pode começar agora e fazer um final diferente!"</em></p>
+               
+            </header>
+            <div id="nav">
+                <ul class="lista">
+                    <li><a  class=" ligacao" href="#sobre-mim">quem sou eu ?</a></li>
+                    <li><a  class=" ligacao" href="#escolaridade">formação</a></li>
+                    <li><a  class=" ligacao" href="#projetos">projetos</a></li>
+                    <li><a  class=" ligacao" href="#profissao">carreira</a></li>
+
+                </ul>
+                
             </div>
-            <h3 id="sobre-mim">Sobre mim ...</h3>
+            
+           <div id="pagina">
+           
+            
+       
+            
+            <div id="sobre-mim" class="container">
+
+            
+            <h3>Sobre mim ...</h3>
                 
                 <p>Nascido em 1980, na cidade de Carapicuíba/SP, porém posso me considerar um legítimo mineiro por natureza. <br>Resido em Belo Horizonte/MG, 
                      sou casado desde 2012 com uma mulher maravilhosa que atende por Laudicécia Mônica e temos um filhinho muito esperto chamado Nickolas Emmanuel que nasceu em dezembro de 2016.
-                    Em 2007, tive a oportunidade de fazer um intercâmbio cultural (EUA), onde vivi por 4 anos tendo o grande desafio de assimilar do zero a língua local</p>
-                <img class="picture" src="foto_eu.jpg" alt="foto do Elisangelo" width= "500">
-                    <h4>Características:</h4>
-                    <ul>
-                    <em>
-                    <li>Responsabilidade</li>
-                    <li>Sinceridade</li>
-                    <li>Honestidade</li>
-                    <li>Proatividade ...</li>
-                    </em>
+                    Em 2007, tive a oportunidade de fazer um intercâmbio cultural (EUA), onde vivi por 4 anos tendo o grande desafio de assimilar do zero a língua local.</p>
+                    
+                    <img class="picture" src="foto_eu.jpg" alt="foto do Elisangelo">
+            
+                        <ul>
+                            <h4>Características:</h4>
+                            <em>
+                            <li>Responsabilidade</li>
+                            <li>Sinceridade</li>
+                            <li>Honestidade</li>
+                            <li>Proatividade ...</li>
+                            <li>humildade</li>
+
+                        </em>
                     </ul>
+                
+                            <ul>
+                                <h4>Soft Skills:</h4>
+
+                            <em>
+                            <li>Capacidade pra agir sobre pressão</li>
+                            <li>saber reconhecer quando erro</li>
+                            <li>capacidade visualizar oportunidades <br>quando todos enchergam dificuldades.</li>
+                            <li>Proatividade ...</li>
+                            <li>buscar atingir o sempre o melhor</li>
+
+                        </em>
+                    </ul>
+                        </td>
+                    </tr>
+                </table>
+               
+                    
                 <p>Neste meio tempo, são mais de 10 anos de carreira no Brasil e mais 4 anos vivendo no Exterior, o que me fez direcionar o <strong>compromisso com o trabalho</strong>, e as características citadas a cima,
-                     como os pontos de destaques do meu perfil de trabalho. <br>Neste momento, uma oportunidade única me impulsiona e me motiva a encarar um enorme desafio de ousar mudar de profissão a essa altura da vida, mesmo batendo as portas dos 40s.<br> 
-                     Esta descisão pouco comum tem muito haver com a proposta inusitada da Trybe, que nos permite sonhar sem termos o peso do fardo caso um infortúnio venha cruzar o nosso caminho.
-                     Trybe nos ajudar a acreditar piamente uma nova oportunidade de dar uma reviravolta em nossas vidas e garantir uma reinserção no mercado de trabalho,
+                     como os pontos de destaques do meu perfil de trabalho. 
+                     <p>Neste momento, uma oportunidade única me impulsiona e me motiva a encarar um enorme desafio de ousar mudar de profissão a essa altura da vida, mesmo batendo as portas dos 40s
+                     Esta descisão pouco comum tem muito haver com a proposta inusitada da Trybe, que nos permite sonhar sem termos o peso do fardo caso um infortúnio venha cruzar o nosso caminho.</p>
+                    <p> Trybe nos ajudar a acreditar piamente uma nova oportunidade de dar uma reviravolta em nossas vidas e garantir uma reinserção no mercado de trabalho,
                      Através de uma nova formação sólida e alinhada com o que o mercado exige, aliado a muito esforço e dedicação; a Trybe tem nos ajudado a apalpar a sensação de atingir o sucesso e consequentemente: satisfação e realização profissional.</p>
-             
-            <h3 id="profissao">Experiência profissional:</h3>     
+                    
+                                  
+               
+            </div>
+            <div id="escolaridade" class="container">
+               
+               
+                <h3>Formação acadêmica</h3>
+                    
+                
+                
+                    <table>
+                        <ul>
+                            <li><p>Atualmente <strong>estudo Desenvolvimento de Software</strong> pela <a  target="_blank" href="https://www.betrybe.com/"><strong>Trybe</strong></a> com previsão de conclusão do curso em abril/2021.</p></li>
+                            <li>Formado em Desenho Técnico para Construção Civil pela Una / Pronatec - 2015</li>
+                            <li><em>Sistemas de Informação </em>pela Anhanguera (incompleto) - 2013</li>
+                            <li>Formado em Técnico em Computação pela Cedaspy - 2006</li>
+                        </ul>
+                    </table>
+               
+                  
+                
+            </div>
+            <div id="profissao" class="container">
+                
+            <h3>Experiência profissional:</h3>     
                
                 <p>Atualmente faço alguns trabalhos livres de entrega pra iFood, Rappi e Uber, porem sempre trabalhei na area de cozinha industrial desde o começo da minha carreira.  </p>
                     
-                <img class="picture" src="https://lh3.googleusercontent.com/56Ubd5L2QGHUVxOmxDFDXOTqZdwRgxIFVoQpsVvIMi1Iv61bp9vRE_OALyIsiP3HjfAkpA=s142" alt="carteira de trabalho sendo assinada" width="500">
-                    <ul>
+                <ul>
                     <li>Clube do Churrasqueiro (2012 - 2018)</li>
                         
-                        <em>
-                            <li>Chapin's Fish & Chips Restaurant (2008 - 2011)</li>
-                            <li>Clancy's Restaurant (2007 - 2011)</li>
-                            <li>All America Bar & Restaurant(2007 - 2010)</li>
-                        </em>
+                    <strong><em>
+                    <li>Chapin's Fish & Chips Restaurant (2008 - 2011)</li>
+                    <li>Clancy's Restaurant (2007 - 2011)</li>
+                    <li>All America Bar & Restaurant(2007 - 2010)</li>
+                </em></strong>
                     
                     <li>Sireli Alimentações (2006)</li>
                     <li>Prudente Prestações de Serviços (1999 - 2005)</li>
-                    
-                    </ul>
+                </ul>
                 <p>Quer seja no Brasil , quer seja no exterior e mesmo depois quando retornei ao Brasil, minhas atuações no mercado de trabalho foram todas voltadas no ramo de alimentação</p>
+           
+                     
+            </div>
+                    
+            <div id="projetos" class="container">
+                        
+            <h3>Meus projetos em Desenvolvimento de Software</h3>
+                <p>Os projetos aqui postados são trabalhos realizados durante o curso de formação em Desenvolvimento de Software pela Trybe.</p>
+                
+                <ol>
+                    <li><a href=" " target="_blank">Estomatopoda, um incrível animal!</a></li>
+                    <li><a href=" " target="_blank">Primento projeto de HTML e CSS</a></li>
+                    <li><a href=" " target="_blank">Exercicios da primeira semana do curso</a></li>
+                    <li><a href=" " target="_blank">Segundo projeto de HTML e CSS</a></li>
+                    <li><a href=" " target="_blank">primero projeto de JavaScript</a></li>
+                    <li><a href=" " target="_blank">Exercicíos de JavaScript</a></li>
+                </ol>
 
-            <h3 id="projetos">Meus projetos em Desenvolvimento de Software</h3>
-                <img class="picture" src="https://d3q93wnyp4lkf8.cloudfront.net/revista/post_images/23427/e083822f2ba115b6dd4e9cd04087f794fb0a4906.jpg?1569012737" alt="alguem desenvolvendo um projeto no computador" width="500px">
-                </div> 
+                </div>
+                </div>
         </body>
 
 
