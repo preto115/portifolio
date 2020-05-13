@@ -17,12 +17,13 @@
              
             
                     body {
-                    background-color: rgba(175, 180, 175, 0.959);
+                    background-color: rgba(184, 192, 185, 0.959);
                     margin: auto;
-                    max-width: 980px;
+                    max-width: 1200px;
                     font-family: 'Montserrat', sans-serif;
-                    font-size:14px;
+                    font-size:15px;
                     text-align: justify;
+                    line-height: 1.5em;
                     color: rgb(7, 2, 2);
 
                 }
@@ -30,9 +31,8 @@
                         
                     #pagina {
                     background:#e3e4d0;
-                    max-width: 980px;
-                    position: initial;  
-                    padding: 0px 40px; 
+                    width: 100%;
+                    min-width:980px;
                     border: 2px groove rgb(250, 150, 10);
                     z-index: 0;
 
@@ -42,29 +42,31 @@
                    
                 #topo{
                       position: fixed;  
-                        width: 976px;
+                        width: 100%;
+                        max-width:1200px;
                         border:2px solid orange;
                         border-bottom: 4px ridge rgb(227, 228, 208);
-                        z-index: 2;
+                        z-index: 1;
 
                         
                     }
                     #topo p{
                         background: linear-gradient(to right, whitesmoke, transparent 60%),url("Casamento.jpg");
                         background-color: whitesmoke;
-                        height: 82px;
+                        height: 104px;
                         color: blue;
                         background-position: 120% 40%;
                         background-size: 50%;
                         background-repeat: no-repeat;
-                        padding-top: 100px;
-                        padding-left: 40px;
+                        padding-top: 80px;
+                        padding-left: 20px;
+                        padding-right: 15%;
 
                     }
                 #nav { 
                     position: fixed;
-                    top: 19%;
-                    width: 600px;
+                    top: 18.8%;
+                    width: 750px;
                     background: linear-gradient(to right, black 50%, transparent 80%);
                     z-index: 3;
                     
@@ -75,12 +77,10 @@
                         display:inline;
                         padding: 10px 10pt;
                         margin-left: 2px;
-
                      }
 
                         #nav li a {
-                            margin: auto;
-                            text-align: left;
+                            text-align: justify;
                             text-decoration:none !important;
                             transition: all 0.3s ;
                             color:white;
@@ -93,9 +93,12 @@
                                 
                         }
 
+                        
                 .container{
-                    padding-top: 250px ;
-
+                    background: linear-gradient(to bottom, transparent 50%, rgb(80, 87, 168) 90%);
+                    background-position: 10% 80%;
+                    padding: 0px 5%; 
+                    padding-top: 23% ;
 
                 }
                          h1{
@@ -103,69 +106,71 @@
                              font-family: cur;
                              position: absolute;
                              padding-top: 30px;
-                            padding-left: 100px;
+                            padding-left: 30px;
 
                                     }
                         h3{
-                            padding-bottom: 1.5em;
+                            padding-bottom: 2em;
                         }
                         h4{
                             margin-top: 20px;
-                            line-height-step:inherit;
                         }
                     
                         #sobre-mim ul{
                             display:inline-block;
-                            padding: 10px 40px;
+                            padding: 20px 20px;
                             line-height: 2em;
                             font-size: 0.9em;
-  
-                        }
-                        p{
-                            break-before: auto;
-                            padding-top: 1em;
-                        }
+                            margin-left:40px ;
+                            margin-right: 40;
+
+                            
+         }
+                      
                         #sobre-parte1{
                             padding-left: 40%;
 
                         }
                      
             #sobre-mim{
-                background: linear-gradient(to right, transparent 30%, rgb(227, 228, 208) 90%), url("foto_eu.jpg");
+                background: linear-gradient(to right, transparent 50%, rgb(227, 228, 208) 85%), url("foto_eu.jpg");
                 background-repeat: no-repeat;
-                background-position: -100px 40%;
-                background-size: 75%;
+                background-position: -100px 50%;
+                background-size: 60%;
+                text-align: left;
+                line-height: px;
+                
+
+
 
                           }
             #escolaridade{
                 background: linear-gradient(to right, rgb(227, 228, 208), transparent 50%), url("https://d1cb96qxozavf7.cloudfront.net/news/shutterstock_3621618861.jpg");
                 background-repeat: no-repeat;
-                padding-right: 50%;
-                background-position: 50px 120%;
-                background-size:130%;
+                padding-right: 45%;
+                background-position: 16em 30%;
+                background-size:120%;
+                padding-bottom: 15%;
 
                           }
           
             #escolaridade ul{
 
               
-                padding: 0 50px;
+                        padding: 0 50px;
                         line-height: 2em;
                         font-size: 0.9em;
                         margin-left: 10px;
                         line-height: 2em;
-
-
             }
-
-                    
                        #profissao{
-                        background: linear-gradient(to right, transparent 50%, rgb(227, 228, 208)), url("https://www.folhape.com.br/obj/10/291217,930,80,0,0,930,522,0,0,0,0.jpg");
+                        background: linear-gradient(to right, transparent 50%, rgb(227, 228, 208) 90%), url("https://www.folhape.com.br/obj/10/291217,930,80,0,0,930,522,0,0,0,0.jpg");
                         background-repeat: no-repeat;
                         padding-left: 50%;
-                        background-size: 100%;
-                        background-position: -250px 75%;
-                        padding-bottom: 10% ;
+                        background-size: 90%;
+                        background-position: -220px 68%;
+                        padding-bottom: 15% ;
+
 
                     }
                     #profissao ul{
@@ -178,12 +183,13 @@
                         }
                         #projetos {
 
-                        background: linear-gradient(to right, rgb(227, 228, 208), transparent 50%), url("https://d3q93wnyp4lkf8.cloudfront.net/revista/post_images/23427/e083822f2ba115b6dd4e9cd04087f794fb0a4906.jpg?1569012737");
+                        background: linear-gradient(to right, rgb(227, 228, 208) 10%, transparent 70%), url("https://d3q93wnyp4lkf8.cloudfront.net/revista/post_images/23427/e083822f2ba115b6dd4e9cd04087f794fb0a4906.jpg?1569012737");
                         background-repeat: no-repeat;
-                        padding-right: 60%;
-                        background-size: 70%;
-                        background-position: 110% 100%;
-                        margin-bottom: 10%;
+                        padding-right: 50%;
+                        background-size: 65%;
+                        background-position: 120% 45%;
+                        padding-bottom: 30%;
+
 
                         }
                         #projetos ol{
@@ -236,12 +242,9 @@
             <div id="sobre-parte1">
             <h3>Sobre mim ...</h3>
                 
-                <p>Nascido em 1980, na cidade de Carapicuíba/SP, porém posso me considerar um legítimo mineiro por natureza. <br>Resido em Belo Horizonte/MG, 
-                     sou casado desde 2012 com uma mulher maravilhosa que atende por Laudicécia Mônica e temos um filhinho muito esperto chamado Nickolas Emmanuel que nasceu em dezembro de 2016.
-                    Em 2007, tive a oportunidade de fazer um intercâmbio cultural (EUA), onde vivi por 4 anos tendo o grande desafio de assimilar do zero a língua local.</p>
-                    
-                    
-            
+                <p>Nasci em 1980, na cidade de Carapicuíba/SP, porém posso me considerar um legítimo mineiro por natureza. </p><br>
+                <p>Atualmente resido em Belo Horizonte/MG, sou casado desde 2012 com uma mulher maravilhosa que atende por Laudicécia Mônica e temos um filhinho muito esperto chamado Nickolas Emmanuel que nasceu em dezembro de 2016.</p>
+                
                         <ul>
                             <h4>Características:</h4>
                             <em>
@@ -253,16 +256,16 @@
 
                         </em>
                     </ul>
-                
-                            <ul>
+                    <ul>
                                 <h4>Soft Skills:</h4>
 
                             <em>
                             <li>Capacidade pra agir sobre pressão</li>
                             <li>saber reconhecer quando erro</li>
-                            <li>capacidade visualizar oportunidades <br>quando todos enchergam dificuldades.</li>
+                            <li>capacidade para visualizar oportunidades  <br>
+                                quando todos enchergam dificuldades.</li>
                             <li>Proatividade ...</li>
-                            <li>buscar atingir o sempre o melhor</li>
+                            <li>buscar atingir o melhor, sempre</li>
 
                         </em>
                     </ul>
@@ -271,34 +274,33 @@
                 </table>
                
                     </div>
-                <p>Neste meio tempo, são mais de 10 anos de carreira no Brasil e mais 4 anos vivendo no Exterior, o que me fez direcionar o <strong>compromisso com o trabalho</strong>, e as características citadas a cima,
-                     como os pontos de destaques do meu perfil de trabalho. 
-                     <p>Neste momento, uma oportunidade única me impulsiona e me motiva a encarar um enorme desafio de ousar mudar de profissão a essa altura da vida, mesmo batendo as portas dos 40s
-                     Esta descisão pouco comum tem muito haver com a proposta inusitada da Trybe, que nos permite sonhar sem termos o peso do fardo caso um infortúnio venha cruzar o nosso caminho.</p>
-                    <p> Trybe nos ajudar a acreditar piamente uma nova oportunidade de dar uma reviravolta em nossas vidas e garantir uma reinserção no mercado de trabalho,
-                     Através de uma nova formação sólida e alinhada com o que o mercado exige, aliado a muito esforço e dedicação; a Trybe tem nos ajudado a apalpar a sensação de atingir o sucesso e consequentemente: satisfação e realização profissional.</p>
+                
+                    <p>Gosto muito de notícias sobre Ciencias, Tecnologia e sou apaixonado pela area de programação e pelo que ela pode fazer em resolução de problemas do mundo real.</p> <br>
+                    <p>Além disso, sempre fui muito afim da linha inglesa, sabem como é... aquela coisa que ensivam pra gente sobre sobre pais de primeiro mundo e lingua dominante no mundo como sendo o inglês.</p><br>
+                    <p>Alimentado por esta ideia plantada em nossas cabeças na escola, em 2007 tive a oportunidade de fazer um intercâmbio cultural (EUA), onde vivi por 4 anos tendo o grande desafio de assimilar do zero a língua local.</p>
                     
                                   
                
-            </div>
+                     </div>
             <div id="escolaridade" class="container">
                
                
                 <h3>Formação acadêmica</h3>
-                    
-                
                 
                     <table>
                         <ul>
                             <li><p>Atualmente <strong>estudo Desenvolvimento de Software</strong> pela <a  target="_blank" href="https://www.betrybe.com/"><strong>Trybe</strong></a> com previsão de conclusão do curso em abril/2021.</p></li>
                             <li>Formado em Desenho Técnico para Construção Civil pela Una / Pronatec - 2015</li>
                             <li><em>Sistemas de Informação </em>pela Anhanguera (incompleto) - 2013</li>
-                            <li>Formado em Técnico em Computação pela Cedaspy - 2006</li>
+                            <li>Formado em Técnico em Computação pela Cedaspy - 2006</li>                       
                         </ul>
                     </table>
-               
-                  
-                
+                    <br>
+                    <p>Neste momento, uma oportunidade única me impulsiona e me motiva a encarar um enorme desafio de ousar mudar de profissão a essa altura da vida, mesmo batendo as portas dos 40s</p><br>
+                    <p>Esta descisão pouco comum tem muito haver com a proposta inusitada da Trybe, que nos permite sonhar sem termos o peso do fardo caso um infortúnio venha cruzar o nosso caminho.</p><br>
+                    <p>A Trybe tem nos permitido acreditar e sonhar com uma nova oportunidade de reinserção no mercado de trabalho,
+                     Através de uma formação sólida e alinhada com o que o mercado exige e precisa. </p><br>
+                    <p>Sendo assim acredito que com muito esforço e dedicação; é muito provável que iremos atingir o sucesso e consequentemente satisfação e a tão sonhada realização profissional.</p>
             </div>
             <div id="profissao" class="container">
                 
@@ -317,7 +319,7 @@
                     
                     <li>Sireli Alimentações (2006)</li>
                     <li>Prudente Prestações de Serviços (1999 - 2005)</li>
-                </ul>
+                </ul><br>
                 <p>Quer seja no Brasil , quer seja no exterior e mesmo depois quando retornei ao Brasil, minhas atuações no mercado de trabalho foram todas voltadas no ramo de alimentação</p>
            
                      
