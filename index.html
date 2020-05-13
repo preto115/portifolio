@@ -17,12 +17,13 @@
              
             
                     body {
-                    background-color: rgba(234, 248, 234, 0.959);
+                    background-color: rgba(184, 192, 185, 0.959);
                     margin: auto;
-                    max-width: 67.8%;
+                    max-width: 1200px;
                     font-family: 'Montserrat', sans-serif;
-                    font-size:14px;
+                    font-size:15px;
                     text-align: justify;
+                    line-height: 1.5em;
                     color: rgb(7, 2, 2);
 
                 }
@@ -31,10 +32,9 @@
                     #pagina {
                     background:#e3e4d0;
                     width: 100%;
-                    position: relative;
-                    top: 0px;  
-                    z-index: 0;                    
-                    border: 2px groove rgb(250, 150, 10);   
+                    min-width:980px;
+                    border: 2px groove rgb(250, 150, 10);
+                    z-index: 0;
 
                 } 
 
@@ -42,45 +42,45 @@
                    
                 #topo{
                       position: fixed;  
-                        width: 67.8%;
+                        width: 100%;
+                        max-width:1200px;
                         border:2px solid orange;
                         border-bottom: 4px ridge rgb(227, 228, 208);
-                        z-index: 1;                    
+                        z-index: 1;
 
                         
                     }
                     #topo p{
                         background: linear-gradient(to right, whitesmoke, transparent 60%),url("Casamento.jpg");
                         background-color: whitesmoke;
-                        height: 82px;
+                        height: 104px;
                         color: blue;
                         background-position: 120% 40%;
                         background-size: 50%;
                         background-repeat: no-repeat;
-                        padding-top: 10.2%;
-                        padding-left: 4%;
+                        padding-top: 80px;
+                        padding-left: 20px;
+                        padding-right: 15%;
 
                     }
                 #nav { 
                     position: fixed;
-                    top: 19.2%;
-                    width: 45%;
+                    top: 18.8%;
+                    width: 750px;
                     background: linear-gradient(to right, black 50%, transparent 80%);
-                    z-index: 2;                    
-
+                    z-index: 3;
+                    
 
                     }
                 #nav, .lista, .lista li {
                        
                         display:inline;
-                        padding: 0.7% 0.8%;
+                        padding: 10px 10pt;
                         margin-left: 2px;
-
                      }
 
                         #nav li a {
-                            margin: 0;
-                            text-align: left;
+                            text-align: justify;
                             text-decoration:none !important;
                             transition: all 0.3s ;
                             color:white;
@@ -93,55 +93,61 @@
                                 
                         }
 
+                        
                 .container{
-                    
+                   
                     padding: 0px 5%; 
-                    padding-top: 25% ;
+                    padding-top: 23% ;
 
                 }
                          h1{
                              color: rgb(241, 121, 9);
-                             font-family: Georgia, 'Times New Roman', Times, serif;
+                             font-family: cur;
                              position: absolute;
-                             padding-top: 4%;
-                            padding-left: 4%;
+                             padding-top: 30px;
+                            padding-left: 30px;
 
                                     }
                         h3{
-                            padding-bottom: 1em;
+                            padding-bottom: 2em;
                         }
                         h4{
-                            line-height-step:inherit;
+                            margin-top: 20px;
                         }
                     
-                        #sobre-mim table, #sobre-mim ul{
-                            padding-left: 30px;
+                        #sobre-mim ul{
+                            display:inline-block;
+                            padding: 20px 20px;
                             line-height: 2em;
-                            font-size: 11px;
-                            font-style: italic;
-  
-                        }
-                        p{
-                            padding-top: 1em;
-                        }
+                            font-size: 0.9em;
+                            margin-left:60px ;
+
+                            
+         }
+                      
                         #sobre-parte1{
-                            padding-left: 50%;
+                            padding-left: 40%;
 
                         }
-                     
+                       #sobre-parte2{
+                       padding-right:50%;
+                       }
             #sobre-mim{
                 background: linear-gradient(to right, transparent 50%, rgb(227, 228, 208) 85%), url("foto_eu.jpg");
                 background-repeat: no-repeat;
-                background-position: -100px 40%;
-                background-size: 70%;
+                background-position: -100px 46%;
+                background-size: 60%;
+                text-align: justify;
+                
+
+
 
                           }
             #escolaridade{
                 background: linear-gradient(to right, rgb(227, 228, 208), transparent 50%), url("https://d1cb96qxozavf7.cloudfront.net/news/shutterstock_3621618861.jpg");
                 background-repeat: no-repeat;
-                padding-right: 40%;
-                background-position: 10em 80%;
-                background-size:120%;
+                background-position: 16em 30%;
+                background-size:100%;
                 padding-bottom: 15%;
 
                           }
@@ -149,16 +155,12 @@
             #escolaridade ul{
 
               
-                padding: 0 50px;
+                        padding: 0 50px;
                         line-height: 2em;
                         font-size: 0.9em;
                         margin-left: 10px;
                         line-height: 2em;
-
-
             }
-
-                    
                        #profissao{
                         background: linear-gradient(to right, transparent 50%, rgb(227, 228, 208) 90%), url("https://www.folhape.com.br/obj/10/291217,930,80,0,0,930,522,0,0,0,0.jpg");
                         background-repeat: no-repeat;
@@ -166,6 +168,7 @@
                         background-size: 90%;
                         background-position: -220px 68%;
                         padding-bottom: 15% ;
+
 
                     }
                     #profissao ul{
@@ -184,6 +187,7 @@
                         background-size: 65%;
                         background-position: 120% 45%;
                         padding-bottom: 30%;
+
 
                         }
                         #projetos ol{
@@ -236,65 +240,66 @@
             <div id="sobre-parte1">
             <h3>Sobre mim ...</h3>
                 
-                <p>Nascido em 1980, na cidade de Carapicuíba/SP, porém posso me considerar um legítimo mineiro por natureza. <p>Resido em Belo Horizonte/MG, 
-                     sou casado desde 2012 com uma mulher maravilhosa que atende por Laudicécia Mônica e temos um filhinho muito esperto chamado Nickolas Emmanuel que nasceu em dezembro de 2016.</p></p>
-                    
-                    <table>
-                        <tr>
-                            <th>Características:</th>
-                            <th>Soft Skills:</th>
-                        </tr>
-                        <tr>
-                            <td><ul>
-                                <li>Responsabilidade</li>
-                                <li>Sinceridade</li>
-                                <li>Honestidade</li>
-                                <li>Proatividade ...</li>
-                                <li>humildade</li>
-                                </ul>
-                            </td>
-                            <td>
-                                <ul>
-                                <li>Capacidade pra agir sobre pressão</li>
-                                <li>saber reconhecer quando erro</li>
-                                <li>capacidade visualizar oportunidades <br>quando todos enchergam dificuldades.</li>
-                                <li>Proatividade ...</li>
-                                <li>buscar atingir o sempre o melhor</li>
-                                </ul>
-                            </td> 
-                        </tr>
+                <p>Nasci em 1980, na cidade de Carapicuíba/SP, porém posso me considerar um legítimo mineiro por natureza. </p><br>
+                <p>Atualmente resido em Belo Horizonte/MG, sou casado desde 2012 com uma mulher maravilhosa que atende por Laudicécia Mônica e temos um filhinho muito esperto chamado Nickolas Emmanuel que nasceu em dezembro de 2016.</p>
+                
+                        <ul>
+                            <h4>Características:</h4>
+                            <em>
+                            <li>Responsabilidade</li>
+                            <li>Sinceridade</li>
+                            <li>Honestidade</li>
+                            <li>Proatividade ...</li>
+                            <li>humildade</li>
+
+                        </em>
+                    </ul>
+                    <ul>
+                                <h4>Soft Skills:</h4>
+
+                            <em>
+                            <li>Capacidade pra agir sobre pressão</li>
+                            <li>saber reconhecer quando erro</li>
+                            <li>capacidade para visualizar oportunidades  <br>
+                                quando todos enchergam dificuldades.</li>
+                            <li>Proatividade ...</li>
+                            <li>buscar atingir o melhor, sempre</li>
+
+                        </em>
+                    </ul>
+                        </td>
+                    </tr>
                 </table>
-                <p>
-                    Em 2007, tive a oportunidade de fazer um intercâmbio cultural (EUA), onde vivi por 4 anos tendo o grande desafio de assimilar do zero a língua local.</p>
+               
                     </div>
-                <p>Neste meio tempo, são mais de 10 anos de carreira no Brasil e mais 4 anos vivendo no Exterior, o que me fez direcionar o <strong>compromisso com o trabalho</strong>, e as características citadas a cima,
-                     como os pontos de destaques do meu perfil de trabalho. 
-                     <p>Neste momento, uma oportunidade única me impulsiona e me motiva a encarar um enorme desafio de ousar mudar de profissão a essa altura da vida, mesmo batendo as portas dos 40s
-                     Esta descisão pouco comum tem muito haver com a proposta inusitada da Trybe, que nos permite sonhar sem termos o peso do fardo caso um infortúnio venha cruzar o nosso caminho.</p>
-                    <p> Trybe nos ajudar a acreditar piamente uma nova oportunidade de dar uma reviravolta em nossas vidas e garantir uma reinserção no mercado de trabalho,
-                     Através de uma nova formação sólida e alinhada com o que o mercado exige, aliado a muito esforço e dedicação; a Trybe tem nos ajudado a apalpar a sensação de atingir o sucesso e consequentemente: satisfação e realização profissional.</p>
+                
+                    <p>Gosto muito de notícias sobre Ciencias, Tecnologia e sou apaixonado pela area de programação e pelo que ela pode fazer em resolução de problemas do mundo real.</p> <br>
+                    <p>Além disso, sempre fui muito afim da linha inglesa, sabem como é... aquela coisa que ensivam pra gente sobre sobre pais de primeiro mundo e lingua dominante no mundo como sendo o inglês.</p><br>
+                    <p>Alimentado por esta ideia plantada em nossas cabeças na escola, em 2007 tive a oportunidade de fazer um intercâmbio cultural (EUA), onde vivi por 4 anos tendo o grande desafio de assimilar do zero a língua local.</p>
                     
                                   
                
-            </div>
+                     </div>
             <div id="escolaridade" class="container">
-               
+                <div id="sobre-parte2">
                
                 <h3>Formação acadêmica</h3>
-                    
-                
                 
                     <table>
                         <ul>
-                            <li><p>Atualmente estudo  <em><strong>Desenvolvimento de Software</em></strong> pela <a  target="_blank" href="https://www.betrybe.com/"><strong>Trybe</strong></a> com previsão de conclusão do curso em abril/2021.</p></li>
-                            <li>Formado em Desenho Técnico para Construção Civil pela Una / Pronatec - 2015</li>
-                            <li><strong><em>Sistemas de Informação </em></strong>pela Anhanguera (incompleto) - 2013</li>
-                            <li>Formado em <strong><em>Técnico em Computação</em></strong> pela Cedaspy - 2006</li>
+                            <li><p>Atualmente estudo <strong><em>Desenvolvimento de Software</em></strong> pela <a  target="_blank" href="https://www.betrybe.com/"><strong>Trybe</strong></a> com previsão de conclusão do curso em abril/2021.</p></li>
+                            <li>Formado em em><strong><em>Desenho Técnico para Construção Civil</em></strong> pela Una / Pronatec - 2015</li>
+                            <li><em><strong>Sistemas de Informação </strong></em>pela Anhanguera (incompleto) - 2013</li>
+                            <li>Formado em <em><strong>Técnico em Computação</strong></em> pela Cedaspy - 2006</li>                       
                         </ul>
                     </table>
-               
-                  
-                
+                    <br>
+                    <p>Neste momento, uma oportunidade única me impulsiona e me motiva a encarar um enorme desafio de ousar mudar de profissão a essa altura da vida, mesmo batendo as portas dos 40s</p><br>
+                </div>
+                    <p>Esta descisão pouco comum tem muito haver com a proposta inusitada da Trybe, que nos permite sonhar sem termos o peso do fardo caso um infortúnio venha cruzar o nosso caminho.</p><br>
+                    <p>A Trybe tem nos permitido acreditar e sonhar com uma nova oportunidade de reinserção no mercado de trabalho,
+                     Através de uma formação sólida e alinhada com o que o mercado exige e precisa. </p><br>
+                    <p>Sendo assim acredito que com muito esforço e dedicação; é muito provável que iremos atingir o sucesso e consequentemente satisfação e a tão sonhada realização profissional.</p>
             </div>
             <div id="profissao" class="container">
                 
@@ -313,7 +318,7 @@
                     
                     <li>Sireli Alimentações (2006)</li>
                     <li>Prudente Prestações de Serviços (1999 - 2005)</li>
-                </ul>
+                </ul><br>
                 <p>Quer seja no Brasil , quer seja no exterior e mesmo depois quando retornei ao Brasil, minhas atuações no mercado de trabalho foram todas voltadas no ramo de alimentação</p>
            
                      
